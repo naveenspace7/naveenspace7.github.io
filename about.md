@@ -23,6 +23,9 @@ Master's in Embedded Systems and Bachelor's in Electronics and Communications.
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    transform: rotate(-18deg);
   }
 
   .left-half-circle {
@@ -32,6 +35,9 @@ Master's in Embedded Systems and Bachelor's in Electronics and Communications.
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    transform: rotate(-18deg);
   }
 
   .right-half-circle {
@@ -41,6 +47,9 @@ Master's in Embedded Systems and Bachelor's in Electronics and Communications.
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    transform: rotate(-18deg);
   }
 
   table {
