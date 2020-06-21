@@ -1,5 +1,5 @@
 title: Wanderer's Space
 description: Yet another blog about software development.
 show_downloads: false
-google_analytics:
+baseurl: https://naveenspace7.github.io/
 theme: jekyll-theme-midnight
