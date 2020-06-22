@@ -15,34 +15,30 @@ To deliver the actual knowledge, these simple examples are used.
 
 ```cpp
 //add.cpp
-
 int add(int x, int y)
 {
     return x + y;
 }
 ```
 
-~~~
+```cpp
 //sub.cpp
-
 int sub(int x, int y)
 {
     return x - y;
 }
-~~~
+```
 
-~~~
+```cpp
 //mul.c
-
 int mul(int x, int y)
 {
     return x - y;
 }
-~~~
+```
 
-~~~
+```cpp
 //main.cpp
-
 /* function prototypes (forward declarations)
    adding these in a header file is a better practice */
 int add(int, int);
@@ -59,7 +55,7 @@ int main()
     cout << add(a,b) << " " << sub(a,b) << endl;
     return 0;
 }
-~~~
+```
 
 ### Why use libraries?
 
