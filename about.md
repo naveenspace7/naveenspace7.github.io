@@ -9,9 +9,7 @@ Naveen Chakravarthy is a software engineer, electronics hobbyist and robotist.
 <!-- I am a die-hard fan of low-level software development in C and C++. -->
 <!-- My thesis focuses on ultra-low latency MAC protocols to incorporate into wireless Tactile Internet applications. -->
 
-He is very passionate about the low-level software that goes into modern devices, while not being afraid to make any hardware designs.
-
-He has about 2.5 years of professional work experience as a software engineer during which he had used C and C++ as his primary programming languages on Linux, Windows and embedded device environments.
+He is very passionate about the low-level software that goes into modern devices, while not being afraid to make any hardware designs. He has about 2.5 years of professional work experience as a software engineer during which he had used C and C++ as his primary programming languages on Linux, Windows and embedded device environments.
 
 <!-- I had programmed ARM Cortex-M (M3, M4, M7) microcontrollers and peripheral drivers (including DMA, CAN, I2C, SPI, UART, Timers) in embedded C and C++. Additionally, I had programmed for heterogeneous systems in CUDA and OpenCL. -->
 
@@ -19,9 +17,7 @@ He has about 2.5 years of professional work experience as a software engineer du
 
 <!-- He hold a Master's degree in Embedded Systems and  -->
 
-He is most familiar with programming STM32, TI CC1xxx, nRF51/nRF52 and ESP32 microcontroller.
-
-He hold a bachelor's degree in Electronics and Communications.
+He is most familiar with programming STM32, TI CC1xxx, nRF51/nRF52 and ESP32 microcontroller. He hold a bachelor's degree in Electronics and Communications.
 
 ## Skills
 
@@ -138,7 +134,7 @@ He hold a bachelor's degree in Electronics and Communications.
   </table>
 </body>
 
-### Tools
+## Tools
 
 Most frequently used tools include GDB, Google Test and Git.
 
@@ -146,7 +142,7 @@ Occasionally used tools are Valgrind, Google Benchmark, Jenkins.
 
 <!-- Software tools that I use frequently include gdb, valgrind, google benchmark, google test -->
 
-### Most used IDEs
+## Most used IDEs
 
 Vim, Visual Studio Code, Eclipse (for embedded targets).
 
