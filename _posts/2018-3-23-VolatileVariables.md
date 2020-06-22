@@ -37,35 +37,35 @@ Embedded systems contain real hardware, usually with sophisticated peripherals. 
 
 To demonstrate this use case, consider an 8-bit status register at address 0x1234. It is required that you poll the status register until it becomes non-zero. The naive and incorrect implementation is as follows:
 
-~~~
+```c
 UINT16 * ptr = (UINT16 *) 0x1234;
 
 // Wait for register to become non-zero.
 while (*ptr == 0);
 // Do something else for later action.
-~~~
+```
 
 This will almost certainly fail as soon as you turn the optimizer on, since the compiler will generate assembly language that looks something like this:
-~~~
+```c
 mov    ptr, #0x1234
 mov    a, @ptr 
 loop   bz    loop
-~~~
+```
 
 The rationale of the optimizer is quite simple: having already read the variable's value into the accumulator (on the second line), there is no need to reread it, since the value will always be the same. Thus, in the third line, we end up with an infinite loop. 
 
 To force the compiler to do what we want, we modify the declaration to:
-~~~
+```c
 UINT16 volatile * ptr = (UINT16 volatile *) 0x1234;
-~~~
+```
 
 The assembly language now looks like this:
 
-~~~
+```c
 mov     ptr, #0x1234
 loop    mov    a, @ptr        
 bz    loop
-~~~
+```
 
 Hence, the desired behavior is achieved.
 
@@ -76,29 +76,24 @@ Subtler problems tend to arise with registers that have special properties. For 
 
 Interrupt service routines often set variables that are tested in main line code. For example, a serial port interrupt may test each received character to see if it is an ETX character (presumably signifying the end of a message). If the character is an ETX, the ISR might set a global flag. An incorrect implementation of this might be:
 
-~~~
+```c
 int etx_rcvd = FALSE;
 
-void main()
-{
+void main() {
     ...
-    while (!ext_rcvd)
-    {
+    while (!ext_rcvd) {
         // Wait
     }
     ...
 }
 
-interrupt void rx_isr(void)
-{
+interrupt void rx_isr(void) {
     ...
     if (ETX == rx_char)
-    {
         etx_rcvd = TRUE;
-    }
     ...
 }
-~~~
+```
 
 With optimization *turned off*, this code might work. However, any half decent optimizer will "break" the code. The problem is that the compiler has no idea that etx_rcvd can be changed within an ISR. As far as the compiler is concerned, the expression !ext_rcvd is always true, and, therefore, you can never exit the while loop. Consequently, all the code after the while loop may simply be removed by the optimizer.
 
@@ -109,7 +104,7 @@ The solution is to __declare the variable etx_rcvd to be volatile__.
 
 Despite the presence of queues, pipes, and other scheduler-aware communications mechanisms in real-time operating systems, it is still fairly common for two tasks to exchange information via a shared memory location (that is, a global). When you add a pre-emptive scheduler to your code, your compiler still has no idea what a context switch is or when one might occur. Thus, another task modifying a shared global is conceptually identical to the problem of interrupt service routines discussed previously. So all shared global variables should be declared volatile. For example:
 
-~~~
+```c
 int cntr;
 
 void task1(void)
@@ -129,7 +124,7 @@ void task2(void)
     sleep(10);
     ...
 }
-~~~
+```
 
 This code will likely fail once the compiler's optimizer is enabled. Declaring cntr to be volatile is the proper way to solve the problem.
 

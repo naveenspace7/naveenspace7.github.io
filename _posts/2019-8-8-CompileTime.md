@@ -10,7 +10,7 @@ There might be place where there has to be a check that has to be done at the co
 <!--more-->
 
 One use case which comes to my mind is to check during compile time if a macro has been defined.
-```
+```c
 #define HEAD 0
 
 #ifndef HEAD
