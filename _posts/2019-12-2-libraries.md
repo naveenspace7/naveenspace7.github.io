@@ -13,14 +13,14 @@ In this short post, I briefly describe how to create and use static and dynamic 
 
 To deliver the actual knowledge, these simple examples are used.
 
-~~~
+```cpp
 //add.cpp
 
 int add(int x, int y)
 {
     return x + y;
 }
-~~~
+```
 
 ~~~
 //sub.cpp
