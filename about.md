@@ -19,6 +19,8 @@ He has about 2.5 years of professional work experience as a software engineer du
 
 <!-- He hold a Master's degree in Embedded Systems and  -->
 
+He is most familiar with programming STM32, TI CC1xxx, nRF51/nRF52 and ESP32 microcontroller.
+
 He hold a bachelor's degree in Electronics and Communications.
 
 ## Skills
@@ -63,93 +65,84 @@ He hold a bachelor's degree in Electronics and Communications.
 </style>
 
 <body>
-
-<!-- <table class="tg" border="0" style="width:300px;border:0px;"> -->
-<table>
-<!-- <tbody> -->
-  <tr>
-    <td class="tg-0lax">C</td> 
-    <td class="tg-0lax">
-    <!-- 4.5 -->
-    <div style="float:left; background:green; margin-left:0px" class="full-dot"></div>
-    <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
-    <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
-    <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
-    <div style="float:left; background:green; margin-left:5px" class="right-half-circle"></div>
-    <div style="float:left; background:gray; margin:0px" class="left-half-circle"></div>
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-0lax">C++</td>
-    <td class="tg-0lax">
-    <!-- 4.0 -->
-    <div style="float:left; background:green; margin-left:0px" class="full-dot"></div>
-    <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
-    <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
-    <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
-    <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-0lax">Python</td>
-    <td class="tg-0lax">
-    <!-- 3.5 -->
-    <div style="float:left; background:green; margin-left:0px" class="full-dot"></div>
-    <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
-    <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
-    <div style="float:left; background:green; margin-left:5px" class="right-half-circle"></div>
-    <div style="float:left; background:gray; margin:0px" class="left-half-circle"></div>
-    <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-0lax">C#</td>
-    <td class="tg-0lax">
-    <!-- 3.0 -->
-    <div style="float:left; background:green; margin-left:0px" class="full-dot"></div>
-    <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
-    <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
-    <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
-    <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-0lax">Java</td>
-    <td class="tg-0lax">
-      <!-- 2.0 -->
+  <table>
+  <!-- <tbody> -->
+    <tr>
+      <td class="tg-0lax">C</td> 
+      <td class="tg-0lax">
+      <!-- 4.5 -->
       <div style="float:left; background:green; margin-left:0px" class="full-dot"></div>
+      <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
+      <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
+      <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
+      <div style="float:left; background:green; margin-left:5px" class="right-half-circle"></div>
+      <div style="float:left; background:gray; margin:0px" class="left-half-circle"></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">C++</td>
+      <td class="tg-0lax">
+      <!-- 4.0 -->
+      <div style="float:left; background:green; margin-left:0px" class="full-dot"></div>
+      <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
+      <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
+      <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
+      <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">Python</td>
+      <td class="tg-0lax">
+      <!-- 3.5 -->
+      <div style="float:left; background:green; margin-left:0px" class="full-dot"></div>
+      <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
+      <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
+      <div style="float:left; background:green; margin-left:5px" class="right-half-circle"></div>
+      <div style="float:left; background:gray; margin:0px" class="left-half-circle"></div>
+      <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">C#</td>
+      <td class="tg-0lax">
+      <!-- 3.0 -->
+      <div style="float:left; background:green; margin-left:0px" class="full-dot"></div>
+      <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
       <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
       <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
       <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
-      <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-0lax">Bash</td>
-    <td class="tg-0lax">
-      <!-- 2.0 -->
-      <div style="float:left; background:green; margin-left:0px" class="full-dot"></div>
-      <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
-      <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
-      <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
-      <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>    
-    </td>
-  </tr>
-</table>
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">Java</td>
+      <td class="tg-0lax">
+        <!-- 2.0 -->
+        <div style="float:left; background:green; margin-left:0px" class="full-dot"></div>
+        <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
+        <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
+        <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
+        <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">Bash</td>
+      <td class="tg-0lax">
+        <!-- 2.0 -->
+        <div style="float:left; background:green; margin-left:0px" class="full-dot"></div>
+        <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
+        <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
+        <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
+        <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>    
+      </td>
+    </tr>
+  </table>
 </body>
 
-
 ### Tools
-GDB, Google Test, Git
 
-Valgrind, Google Benchmark
+Most frequently used tools include GDB, Google Test and Git.
 
-Jenkins
+Occasionally used tools are Valgrind, Google Benchmark, Jenkins.
 
 <!-- Software tools that I use frequently include gdb, valgrind, google benchmark, google test -->
 
