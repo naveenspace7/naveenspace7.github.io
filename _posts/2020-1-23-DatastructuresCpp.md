@@ -69,6 +69,7 @@ Set allows the following operations:
 * Capacity: empty, size
 * Modification: insert, erase, clear, emplace, emplace_hint
 * Operations: find, count, lower_bound, upper_bound
+
 ___
 
 ### 4. std::unordered_set <a name="unorderedset"></a>
