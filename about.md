@@ -4,13 +4,24 @@ title: About
 permalink: /about/
 ---
 
-Naveen Chakravarthy is a software engineer, electronics hobbyist and robotist.
+Naveen Chakravarthy is a software engineer, electronics hobbyist and robotist. 
 
-### More Information
+<!-- I am a die-hard fan of low-level software development in C and C++. -->
+<!-- My thesis focuses on ultra-low latency MAC protocols to incorporate into wireless Tactile Internet applications. -->
 
-Master's in Embedded Systems and Bachelor's in Electronics and Communications.
+He is very passionate about the low-level software that goes into modern devices, while not being afraid to make any hardware designs.
 
-### Skills
+He has about 2.5 years of professional work experience as a software engineer during which he had used C and C++ as his primary programming languages on Linux, Windows and embedded device environments.
+
+<!-- I had programmed ARM Cortex-M (M3, M4, M7) microcontrollers and peripheral drivers (including DMA, CAN, I2C, SPI, UART, Timers) in embedded C and C++. Additionally, I had programmed for heterogeneous systems in CUDA and OpenCL. -->
+
+<!-- ### More Information -->
+
+<!-- He hold a Master's degree in Embedded Systems and  -->
+
+He hold a bachelor's degree in Electronics and Communications.
+
+## Skills
 
 <style>
 
@@ -129,19 +140,31 @@ Master's in Embedded Systems and Bachelor's in Electronics and Communications.
       <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>    
     </td>
   </tr>
-
-<!-- </tbody> -->
 </table>
 </body>
 
+
+### Tools
+GDB, Google Test, Git
+
+Valgrind, Google Benchmark
+
+Jenkins
+
+<!-- Software tools that I use frequently include gdb, valgrind, google benchmark, google test -->
+
+### Most used IDEs
+
+Vim, Visual Studio Code, Eclipse (for embedded targets).
+
 ## Interests
-Embedded software development, ARM microcontrollers, Linux driver development, Heterogenous computing
+Embedded software development, ARM microcontrollers, Embedded Linux, Linux driver development, Heterogenous computing
 
 ### Contact me
 
 Find my stuff on Github:
 [naveenspace7](https://github.com/naveenspace7)
 
-Mail me:
-[naveen.j_94@outlook.com](mailto:naveen.j_94@outlook.com)
+<!-- Mail me:
+[naveen.j_94@outlook.com](mailto:naveen.j_94@outlook.com) -->
 
