@@ -96,6 +96,13 @@ Set allows the following operations:
 * Hash Policy: load_factor, max_load_factor, rehash, reserve
 * Buckets: bucket_count, max_bucket_count, bucket_size, bucket
 
+A small demo program to show how to implement an unordered_set for custom classes is shown at 
+
+<div>
+  <h1>Your Code Embed</h1>
+  <script src="https://gist.github.com/naveenspace7/d44e137e788b6fc7a686125091b4ff9a.js"></script>
+</div>
+
 ___
 
 
