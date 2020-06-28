@@ -25,6 +25,9 @@ tags: C++ Datastructures
 
 [9. unordered_multimap](#unorderedmultimap)
 
+[priority_queue](#priorityqueue)
+
+
 <!-- ### Types of initialization <a name="initializations"></a> -->
 ___
 
@@ -221,7 +224,45 @@ ___
 
 ### std::array
 
-### std::priority_queue
+### std::priority_queue <a name="priorityqueue"></a>
+
+<!-- Header file -->
+Present in header file `queue`.
+
+<!-- General purpose and properties -->
+Although they are not containers, the are container adaptors which can take form of a `vector` (default) or `deque`.
+Priority queues are container that store elements with some interesting property (either min or max value) at the top of the tree, decreasing the access time. It allows only to retrieve the max (for max-heap) and min (for min-heap).
+
+<!-- Implementation -->
+They are implementation of binary heaps. In which a node has a value greater than equal to the children (for a max heap). Heaps are linear data structures, in which relation between children and parent can be obtain with the following equations:
+
+`parent(n) = (n-1)/2`
+
+`left-child(n) = (n+1)*2 - 1 = 2n + 1`
+`right-child(n) = (n+1)*2 = 2n + 2`
+
+
+ Therefore, it also has the provision to make use of a custom comparison function as a template parameter (requiring signature `bool comp(T lhs, T rhs)`). It can also take an allocator object when default memory allocation needs to be modified.
+
+<!-- Figure of binary search tree -->
+
+<!-- Access times -->
+Since they are implemented as heaps, the time to access the value of interest (max - for max heap and min - for min heap) is `O(1)`. However, inserting an element into the heap takes `O(log n)` time. Since, insertions initially happen at the end of the array and keep climbing until they reach the desired position. (inserting an element actually calls the function `push_heap` on the underlying container). Pop operations also have a similar runtime.
+
+<!-- Operations possible -->
+Set allows the following operations:
+* Iterators: **None**
+* Capacity: empty, size
+* Modification: push, emplace, pop
+* Operations: top
+
+Heap operations are also possible on standalone vector and deque with heap functions. These function are available in header `algorithm`.
+
+A small demo program to show how to use a priority queue and standalone heap <a href="https://gist.github.com/naveenspace7/f3395243e7b720720e01dd90dca16e03">here</a>
+
+<!-- http://www.cplusplus.com/reference/queue/priority_queue/ -->
+
+___
 
 ## Summary
 

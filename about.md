@@ -136,7 +136,7 @@ He is most familiar with programming STM32, TI CC1xxx, nRF51/nRF52 and ESP32 mic
 
 ## Tools
 
-Most frequently used tools include GDB, Google Test and Git.
+Most frequently used tools are GDB, Google Test, Git, Clang-tidy, CppCheck
 
 Occasionally used tools are Valgrind, Google Benchmark, Jenkins.
 
