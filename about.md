@@ -110,6 +110,17 @@ He is most familiar with programming STM32, TI CC1xxx, nRF51/nRF52 and ESP32 mic
       </td>
     </tr>
     <tr>
+      <td class="tg-0lax">Perl</td>
+      <td class="tg-0lax">
+        <!-- 2.0 -->
+        <div style="float:left; background:green; margin-left:0px" class="full-dot"></div>
+        <div style="float:left; background:green; margin-left:5px" class="full-dot"></div>
+        <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
+        <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
+        <div style="float:left; background:gray; margin-left:5px" class="full-dot"></div>
+      </td>
+    </tr>
+    <tr>
       <td class="tg-0lax">Java</td>
       <td class="tg-0lax">
         <!-- 2.0 -->
