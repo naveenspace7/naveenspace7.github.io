@@ -16,7 +16,8 @@ In one of the talk at CppCon, a speaker mentioned allocators are a handle to hea
 Most of the STL containers store their data on the heap instead of the stack. As an example, I will explain how vector works superficially, only highlighting the aspects needed for talking about the allocators. From what is shown in the below figure, it can be seen that the data a vector represents is stored in the heap section of the program memory.
 
 
-<!-- figure here -->
+![Working of vector]({{site.url}}/assets/images/vector-working.png)
+
 
 This can be achieved by the simple default usage, as described below. This calls in for a dynamic (heap) allocation by calling the new/malloc function.
 
