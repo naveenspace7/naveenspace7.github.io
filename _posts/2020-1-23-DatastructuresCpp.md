@@ -242,6 +242,8 @@ Set allows the following operations:
 * Element Access: operator[], at, front, back
 * Modification: assign, push_back, push_front, pop_back, pop_front, insert, erase, clear, emplace, emplace_back, emplace_front
 
+Some detailed analysis of the operations on deque are found [here](https://www.codeproject.com/Articles/5425/An-In-Depth-Study-of-the-STL-Deque-Container).
+
 ___
 
 ### std::list
