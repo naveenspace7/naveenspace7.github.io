@@ -226,7 +226,6 @@ Deque expands to double ended queue. This container should be preferred when ele
 <!-- Implementation -->
 Deque is commonly implemented as dynamic arrays in which multiple arrays are attached with linked with each other. Generally these multiple arrays are managed from a lookup table. The working of this data structure is shown in the image below.It should be noted that the size of the chucks should be constant throughout an instance.
 
-
 <!-- Figure of binary search tree -->
 ![Double Ended Queue Implementation as shown by Konrad Rudolph]({{site.url}}/assets/images/deque.png)
 
@@ -242,13 +241,48 @@ Set allows the following operations:
 * Element Access: operator[], at, front, back
 * Modification: assign, push_back, push_front, pop_back, pop_front, insert, erase, clear, emplace, emplace_back, emplace_front
 
-Some detailed analysis of the operations on deque are found [here](https://www.codeproject.com/Articles/5425/An-In-Depth-Study-of-the-STL-Deque-Container).
+Some detailed analysis of the operations on deque are found [here](https://www.codeproject.com/Articles/5425/An-In-Depth-Study-of-the-STL-Deque-Container) and [here](http://cpp-tip-of-the-day.blogspot.com/2013/11/how-is-stddeque-implemented.html).
+
+Reference found [here](http://www.cplusplus.com/reference/deque/deque/).
+
+___
+
+
+### 11. std::forward_list  <a name="forwardlist"></a>
+
+<!-- Header file -->
+Present in header file `forward_list`.
+
+<!-- General purpose and properties -->
+Deque expands to double ended queue. This container should be preferred when elements are inserted or removed from either the front or back of the container frequently, while also allowing random access to the elements (by index).
+
+<!-- Implementation -->
+Forward lists are implemention of singly-linked lists. In which every element along with it's data also hold the pointer to the next element.
+
+<!-- Deque is commonly implemented as dynamic arrays in which multiple arrays are attached with linked with each other. Generally these multiple arrays are managed from a lookup table. The working of this data structure is shown in the image below.It should be noted that the size of the chucks should be constant throughout an instance. -->
+
+
+<!-- Figure of binary search tree -->
+![Singly-Linked List]({{site.url}}/assets/images/forward-list.png)
+
+<!-- Access times -->
+<!-- The internal implementation around maps make it constant time access `O(1)` by making use of the house-keeping data in the lookup table. Pushing and poping an element from the front and back are both constant time access `O(1)`. However, insert is a linear time operation, since it has to move all elements by one position. -->
+
+<!-- Operations possible -->
+<!-- Set allows the following operations:
+* Iterators: begin, end, rbegin, rend, cbegin, cend, crbegin, crend
+* Capacity: empty, size, resize, shrink_to_fit
+* Element Access: operator[], at, front, back
+* Modification: assign, push_back, push_front, pop_back, pop_front, insert, erase, clear, emplace, emplace_back, emplace_front -->
+
+<!-- Some detailed analysis of the operations on deque are found [here](https://www.codeproject.com/Articles/5425/An-In-Depth-Study-of-the-STL-Deque-Container). -->
+
+<!-- Reference found [here](http://www.cplusplus.com/reference/deque/deque/). -->
+
 
 ___
 
 ### std::list
-
-### std::forward_list
 
 ### std::queue
 
