@@ -215,11 +215,45 @@ ___
 
 ___
 
+### 10. std::deque  <a name="deque"></a>
+
+<!-- Header file -->
+Present in header file `deque`.
+
+<!-- General purpose and properties -->
+Deque expands to double ended queue.
+
+Set container stores **unique elements** whose values once entered **cannot be modified later**, they can only be inserted and removed. The elements in a set are accessed by their **key instead of position**. The elements are sorted according to a particular order as they are inserted.
+
+<!-- Implementation -->
+Deque is commonly implemented as dynamic arrays in which multiple arrays are attached with linked with each other. Generally these multiple arrays are managed from a lookup table.
+
+
+<!-- Figure of binary search tree -->
+![Double Ended Queue Implementation as shown by Konrad Rudolph]({{site.url}}/assets/images/deque.png)
+
+
+
+
+Set is most commonly implemented as a **binary search tree** (red-black trees). Therefore, it also has the provision to make use of a custom comparison function as a template parameter (requiring signature `bool comp(T lhs, T rhs)`). It can also take an allocator object when default memory allocation needs to be modified.
+
+
+<!-- Access times -->
+Since they are implemented in a binary search trees, the time to **insert, erase and find** an element is `O(log n)` (the size of the tree). It is worth mentioning that set can make use of hints to decrease the operation times.
+
+<!-- Operations possible -->
+Set allows the following operations:
+* Iterators: begin, end, rbegin, rend, cbegin, cend, crbegin, crend
+* Capacity: empty, size
+* Modification: insert, erase, clear, emplace, emplace_hint
+* Operations: find, lower_bound, upper_bound
+
+
+___
+
 ### std::list
 
 ### std::forward_list
-
-### std::deque
 
 ### std::queue
 
