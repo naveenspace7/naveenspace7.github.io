@@ -59,7 +59,10 @@ void * setup_shm()
 
 ### Allocators to shared memory
 
-Once we have the memory created 
-
+To use the shared memory for multiple containers (vectors), present in multiple containers, the allocator needs to passed with the shared memory address obtained in the previous sections.
 
 ![Allocators to shared memory]({{site.url}}/assets/images/shared_allocator.png)
+
+A simple working code for using shared memory as a custom allocator with a vector is given [here](https://gist.github.com/naveenspace7/ffed1c3ea33690b686699add198b9ba5).
+
+Now with the sharing in place, there needs to be additional care taken for synchronization of the data shared by multiple processes.
