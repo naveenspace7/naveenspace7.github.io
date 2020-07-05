@@ -49,7 +49,7 @@ Set container stores **unique elements** whose values once entered **cannot be m
 Set is most commonly implemented as a **binary search tree** (red-black trees). Therefore, it also has the provision to make use of a custom comparison function as a template parameter (requiring signature `bool comp(T lhs, T rhs)`). It can also take an allocator object when default memory allocation needs to be modified.
 
 <!-- Figure of binary search tree -->
-![figure desc]({{site.url}}/images/nav-bg.png)
+![Binary Search Tree]({{site.url}}/assets/images/binary-tree.png)
 
 <!-- Access times -->
 Since they are implemented in a binary search trees, the time to **insert, erase and find** an element is `O(log n)` (the size of the tree). It is worth mentioning that set can make use of hints to decrease the operation times.
