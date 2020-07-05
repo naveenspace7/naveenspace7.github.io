@@ -310,7 +310,8 @@ They are implementation of binary heaps. In which a node has a value greater tha
 
  Therefore, it also has the provision to make use of a custom comparison function as a template parameter (requiring signature `bool comp(T lhs, T rhs)`). It can also take an allocator object when default memory allocation needs to be modified.
 
-<!-- Figure of binary search tree -->
+![Heap Representation of an array]({{site.url}}/assets/images/heap.png)
+
 
 <!-- Access times -->
 Since they are implemented as heaps, the time to access the value of interest (max - for max heap and min - for min heap) is `O(1)`. However, inserting an element into the heap takes `O(log n)` time. Since, insertions initially happen at the end of the array and keep climbing until they reach the desired position. (inserting an element actually calls the function `push_heap` on the underlying container). Pop operations also have a similar runtime.
