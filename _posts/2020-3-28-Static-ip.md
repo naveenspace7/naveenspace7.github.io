@@ -13,6 +13,7 @@ This post describes how to setup a static IP address on a Raspberry Pi, in fact 
 * Navigate to `/etc`.
 * Make a backup of file `dhcpcd.conf`.
 * Add the following line depending on the interface:
+
 ```
 # For a wired connection
 interface eth0
@@ -30,6 +31,7 @@ static ip_address=192.168.0.200/24
 static routers=192.168.0.1
 static domain_name_servers=192.168.0.1
 ```
+
 * Reboot the system.
 
 
