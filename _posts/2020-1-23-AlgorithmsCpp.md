@@ -41,6 +41,8 @@ tags: C++ Algorithms
 
 [17. copy_if](#cpyif)
 
+[18. nth_element](#nthelem)
+
 <!-- ### Types of initialization <a name="initializations"></a> -->
 ___
 
@@ -285,4 +287,21 @@ Linear time complexity.
 
 More info [here](http://www.cplusplus.com/reference/algorithm/copy_if/).
 
+___
+
+### [18. std::nth_element <a name="nthelem"></a>
+
+Rearranges elements such that `n`th element specified is in the right place (as it would have been in a sorted sequence). Present in the `algorithm` header. To compare custom objects, the class should overload `operator<` and `operator>`.
+
+##### Usage:
+
+* `std::nth_element(begin(v1), begin(v1)+n, end(v1))`
+
+* `std::nth_element(begin(v1), begin(v1)+n, end(v1), pred)`
+
+Hint: for `pred` use: `less<T>()` for sorting in ascending order and `greater<T>()` for sorting in descending order.
+
+Linear (in length) time complexity, on average.
+
+More info [here](http://www.cplusplus.com/reference/algorithm/nth_element/).
 ___
