@@ -14,31 +14,10 @@ C++ offers a wide range of data structures. From a performance perspective, the 
 | [1. vector](#vector)      | [2. set](#set) | [3. multiset](#multiset) |
 | [4. unordered_set](#unorderedset)      | [5. unordered_multiset](#unorderedmultiset)      |   [6. map](#map) |
 | [7. multimap](#multimap) | [8. unordered_map](#unorderedmap)     |    [9. unordered_multimap](#unorderedmultimap) |
-| [priority_queue](#priorityqueue) |      |     |
+|  |11.      | 12.    |
+|  |[14. stack](#stack)      | 15.    |
+| [16. priority_queue](#priorityqueue) |      | 15.    |
 
-<!-- [1. vector](#vector)
-
-[2. set](#set)
-
-[3. multiset](#multiset)
-
-[4. unordered_set](#unorderedset)
-
-[5. unordered_multiset](#unorderedmultiset)
-
-[6. map](#map)
-
-[7. multimap](#multimap)
-
-[8. unordered_map](#unorderedmap)
-
-[9. unordered_multimap](#unorderedmultimap)
-
-[priority_queue](#priorityqueue) -->
-
-
-<!-- ### Types of initialization <a name="initializations"></a> -->
-___
 
 ### 1. std::vector <a name="vector"></a>
 
@@ -286,18 +265,41 @@ Forward lists are implemention of singly-linked lists. In which every element al
 
 <!-- Reference found [here](http://www.cplusplus.com/reference/deque/deque/). -->
 
+___
+
+### 12. std::list
 
 ___
 
-### std::list
+### 13. std::queue
 
-### std::queue
+___
 
-### std::stack
+### 14. std::stack <a name="stack"></a>
 
-### std::array
+Present in the header `stack`.
 
-### std::priority_queue <a name="priorityqueue"></a>
+Similar to priority_queues, they are container adaptors, which can take form of a `vector`, `deque` **(default)** and `list`.
+
+Stack is a container used to perform Last-in First-out operations.
+
+``` cpp
+stack<int, vector<int>> stackVector();
+stack<int, list<int>> stackList();
+stack<int, deque<int>> stackDeque();
+```
+
+
+Stack allows the following operations:
+* General functions: empty, size, top, push, emplace, pop, swap.
+
+___
+
+### 15. std::array
+
+___
+
+### 16. std::priority_queue <a name="priorityqueue"></a>
 
 <!-- Header file -->
 Present in header file `queue`.
@@ -323,7 +325,7 @@ They are implementation of binary heaps. In which a node has a value greater tha
 Since they are implemented as heaps, the time to access the value of interest (max - for max heap and min - for min heap) is `O(1)`. However, inserting an element into the heap takes `O(log n)` time. Since, insertions initially happen at the end of the array and keep climbing until they reach the desired position. (inserting an element actually calls the function `push_heap` on the underlying container). Pop operations also have a similar runtime.
 
 <!-- Operations possible -->
-Set allows the following operations:
+Priority queue allows the following operations:
 * Iterators: **None**
 * Capacity: empty, size
 * Modification: push, emplace, pop
