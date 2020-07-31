@@ -9,8 +9,8 @@ C++ offers a wide range of data structures. From a performance perspective, the 
 
 <!--more-->
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
+<!-- | Tables        | Are           | Cool  | -->
+| ------------- | ------------- | ------------- |
 | [1. vector](#vector)      | [2. set](#set) | [3. multiset](#multiset) |
 | [4. unordered_set](#unorderedset)      | [5. unordered_multiset](#unorderedmultiset)      |   [6. map](#map) |
 | [7. multimap](#multimap) | [8. unordered_map](#unorderedmap)     |    [9. unordered_multimap](#unorderedmultimap) |
