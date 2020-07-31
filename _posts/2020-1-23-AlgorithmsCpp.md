@@ -18,7 +18,7 @@ tags: C++ Algorithms
 | [19. reverse](#rvr) | [20. reverse_copy](#rcopy)      | [21. set_difference](#sdiff) |
 
 
-[1. accumulate](#accumulate)
+<!-- [1. accumulate](#accumulate)
 
 [2. count](#count)
 
@@ -60,7 +60,7 @@ tags: C++ Algorithms
 
 [21. set_difference](#sdiff)
 
-[22. set_symmetric_difference](#ssdiff)
+[22. set_symmetric_difference](#ssdiff) -->
 
 <!-- ### Types of initialization <a name="initializations"></a> -->
 ___
