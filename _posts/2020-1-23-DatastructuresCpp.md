@@ -14,9 +14,13 @@ C++ offers a wide range of data structures. From a performance perspective, the 
 | [1. vector](#vector)      | [2. set](#set) | [3. multiset](#multiset) |
 | [4. unordered_set](#unorderedset)      | [5. unordered_multiset](#unorderedmultiset)      |   [6. map](#map) |
 | [7. multimap](#multimap) | [8. unordered_map](#unorderedmap)     |    [9. unordered_multimap](#unorderedmultimap) |
-|  |11.      | 12.    |
-|  |[14. stack](#stack)      | 15.    |
-| [16. priority_queue](#priorityqueue) |      | 15.    |
+| [10. deque](#deque) |[11. forward_list](#forwardlist)      | [12. list](#)    |
+| [13. queue](#)  |[14. stack](#stack)      | [15. array](#)    |
+| [16. priority_queue](#priorityqueue) |      |     |
+
+
+
+
 
 
 ### 1. std::vector <a name="vector"></a>
