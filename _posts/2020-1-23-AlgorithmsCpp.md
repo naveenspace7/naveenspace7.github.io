@@ -289,7 +289,7 @@ More info [here](http://www.cplusplus.com/reference/algorithm/copy_if/).
 
 ___
 
-### [18. std::nth_element <a name="nthelem"></a>
+### 18. std::nth_element <a name="nthelem"></a>
 
 Rearranges elements such that `n`th element specified is in the right place (as it would have been in a sorted sequence). Present in the `algorithm` header. To compare custom objects, the class should overload `operator<` and `operator>`.
 

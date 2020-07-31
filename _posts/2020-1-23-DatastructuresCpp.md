@@ -9,7 +9,14 @@ C++ offers a wide range of data structures. From a performance perspective, the 
 
 <!--more-->
 
-[1. vector](#vector)
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| [1. vector](#vector)      | [2. set](#set) | [3. multiset](#multiset) |
+| [4. unordered_set](#unorderedset)      | [5. unordered_multiset](#unorderedmultiset)      |   [6. map](#map) |
+| [7. multimap](#multimap) | [8. unordered_map](#unorderedmap)     |    [9. unordered_multimap](#unorderedmultimap) |
+| [priority_queue](#priorityqueue) |      |     |
+
+<!-- [1. vector](#vector)
 
 [2. set](#set)
 
@@ -27,7 +34,7 @@ C++ offers a wide range of data structures. From a performance perspective, the 
 
 [9. unordered_multimap](#unorderedmultimap)
 
-[priority_queue](#priorityqueue)
+[priority_queue](#priorityqueue) -->
 
 
 <!-- ### Types of initialization <a name="initializations"></a> -->
@@ -312,7 +319,6 @@ They are implementation of binary heaps. In which a node has a value greater tha
 
 ![Heap Representation of an array]({{site.url}}/assets/images/heap.png)
 
-
 <!-- Access times -->
 Since they are implemented as heaps, the time to access the value of interest (max - for max heap and min - for min heap) is `O(1)`. However, inserting an element into the heap takes `O(log n)` time. Since, insertions initially happen at the end of the array and keep climbing until they reach the desired position. (inserting an element actually calls the function `push_heap` on the underlying container). Pop operations also have a similar runtime.
 
@@ -328,6 +334,8 @@ Heap operations are also possible on standalone vector and deque with heap funct
 A small demo program to show how to use a priority queue and standalone heap <a href="https://gist.github.com/naveenspace7/f3395243e7b720720e01dd90dca16e03">here</a>
 
 <!-- http://www.cplusplus.com/reference/queue/priority_queue/ -->
+
+<!-- https://www.cs.usfca.edu/~galles/visualization/Heap.html -->
 
 ___
 
