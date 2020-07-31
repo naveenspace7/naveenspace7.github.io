@@ -63,7 +63,8 @@ tags: C++ Algorithms
 [22. set_symmetric_difference](#ssdiff) -->
 
 <!-- ### Types of initialization <a name="initializations"></a> -->
-___
+
+<!-- ___ -->
 
 ### 1. std::accumulate <a name="accumulate"></a>
 
@@ -374,6 +375,5 @@ ___
 
 ___
 
-### 25. std::set_intersection <a name="seti;q
-n"></a>
+### 25. std::set_intersection <a name="setin"></a>
 
