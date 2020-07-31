@@ -12,6 +12,11 @@ tags: C++ Algorithms
 | [1. accumulate](#accumulate)      | [2. count](#count) | [3. count_if](#count_if) |
 | [4. find](#find)     | [5. find_if](#findif)      |  [6. for_each](#feach) |
 | [7. sort](#sort) | [8. stable_sort](#stabsort)      | [9. partial_sort](#par_sort) |
+| [10. partial_sort_copy](#par_sort_cpy) | [11. min_element](#mnelem)      | [12. max_element](#mxelem) |
+| [13. search](#srch) | [14. search_n](#srchn)      | [15. binary_search](#bsrch) |
+| [16. copy](#cpy) | [17. copy_if](#cpyif)      | [18. nth_element](#nthelem) |
+| [19. reverse](#rvr) | [20. reverse_copy](#rcopy)      | [21. set_difference](#sdiff) |
+
 
 [1. accumulate](#accumulate)
 
