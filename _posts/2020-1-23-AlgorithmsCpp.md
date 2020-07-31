@@ -7,6 +7,12 @@ tags: C++ Algorithms
 
 <!--more-->
 
+| ToC        | ToC           | ToC  |
+| ------------- | ------------- | ------------- |
+| [1. accumulate](#accumulate)      | [2. count](#count) | [3. count_if](#count_if) |
+| [4. find](#find)     | [5. find_if](#findif)      |  [6. for_each](#feach) |
+| [7. sort](#sort) | [8. stable_sort](#stabsort)      | [9. partial_sort](#par_sort) |
+
 [1. accumulate](#accumulate)
 
 [2. count](#count)
@@ -42,6 +48,14 @@ tags: C++ Algorithms
 [17. copy_if](#cpyif)
 
 [18. nth_element](#nthelem)
+
+[19. reverse](#rvr)
+
+[20. reverse_copy](#rcopy)
+
+[21. set_difference](#sdiff)
+
+[22. set_symmetric_difference](#ssdiff)
 
 <!-- ### Types of initialization <a name="initializations"></a> -->
 ___
@@ -305,3 +319,56 @@ Linear (in length) time complexity, on average.
 
 More info [here](http://www.cplusplus.com/reference/algorithm/nth_element/).
 ___
+
+### 19. std::reverse <a name="rvr"></a>
+
+
+___
+
+### 20. std::reverse_copy <a name="rcopy"></a>
+
+___
+
+### 21. std::set_difference <a name="sdiff"></a>
+
+Gives the set difference between two sets. In this case, the order of the containers matter. Present in the header `algorithm`. In order for the function to work as intended, the container should be sorted before being passed to the function.
+
+##### Usage:
+
+* `std::set_difference(begin(v1), end(v1), begin(v2), end(v2), begin(v3))`
+
+* `std::set_difference(begin(v1), end(v1), begin(v2), end(v2), back_inserter(v3))` // for an empty array
+
+Linear complexity. 
+
+More info [here](http://www.cplusplus.com/reference/algorithm/set_difference/).
+
+___
+
+### 22. std::set_symmetric_difference <a name="ssdiff"></a>
+
+Gives the set difference between two sets regardless of the ordering. In other words the element present in one container but missing in the other are obtained. Present in the header `algorithm`. In order for the function to work as intended, the container should be sorted before being passed to the function.
+
+##### Usage:
+
+* `std::set_symmetric_difference(begin(v1), end(v1), begin(v2), end(v2), begin(v3))`
+
+* `std::set_symmetric_difference(begin(v1), end(v1), begin(v2), end(v2), back_inserter(v3))` // for an empty array
+
+Linear complexity. 
+
+More info [here](http://www.cplusplus.com/reference/algorithm/set_symmetric_difference/).
+
+___
+
+### 23. std::merge <a name="merge"></a>
+
+___
+
+### 24. std::set_union <a name="setun"></a>
+
+___
+
+### 25. std::set_intersection <a name="seti;q
+n"></a>
+
