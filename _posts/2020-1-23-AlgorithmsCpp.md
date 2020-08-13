@@ -376,9 +376,11 @@ Present in the `algorithm` header. This function can take either one or two cont
 
 1. Take a container, pass each of the element to the function given, collect the output into another container.
 
+![Transform Unary Operation]({{site.url}}/assets/images/transform_unary.png)
+
+
 2. Take two containers, pass each of the element as a pair to the binary function given and collect the output into another container.
 
-<!-- Figure of binary search tree -->
 ![Transform Binary Operation]({{site.url}}/assets/images/transform_binary.png)
 
 
@@ -387,6 +389,10 @@ Present in the `algorithm` header. This function can take either one or two cont
 * `std::transform(begin(v1), end(v1), begin(res_v), unary_op)`
 
 * `std::transform(begin(v1), end(v1), begin(v2), begin(res_v), binary_op)`
+
+Linear complexity.
+
+More info [here](http://www.cplusplus.com/reference/algorithm/transform/).
 
 ___
 
