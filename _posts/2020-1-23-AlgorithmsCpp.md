@@ -16,6 +16,9 @@ tags: C++ Algorithms
 | [13. search](#srch) | [14. search_n](#srchn)      | [15. binary_search](#bsrch) |
 | [16. copy](#cpy) | [17. copy_if](#cpyif)      | [18. nth_element](#nthelem) |
 | [19. reverse](#rvr) | [20. reverse_copy](#rcopy)      | [21. set_difference](#sdiff) |
+| [22. set_symmetric_difference](#ssdiff) | [23. transform](#transform)      |  |
+
+
 
 
 <!-- [1. accumulate](#accumulate)
@@ -367,13 +370,33 @@ More info [here](http://www.cplusplus.com/reference/algorithm/set_symmetric_diff
 
 ___
 
-### 23. std::merge <a name="merge"></a>
+### 23. std::transform <a name="transform"></a>
+
+Present in the `algorithm` header. This function can take either one or two containers and perform unary or binary operation and copy the results into another container. To elaborate it, transform can do one of the two functions:
+
+1. Take a container, pass each of the element to the function given, collect the output into another container.
+
+2. Take two containers, pass each of the element as a pair to the binary function given and collect the output into another container.
+
+<!-- Figure of binary search tree -->
+![Transform Binary Operation]({{site.url}}/assets/images/transform_binary.png)
+
+
+##### Usage:
+
+* `std::transform(begin(v1), end(v1), begin(res_v), unary_op)`
+
+* `std::transform(begin(v1), end(v1), begin(v2), begin(res_v), binary_op)`
 
 ___
 
-### 24. std::set_union <a name="setun"></a>
+### 24. std::merge <a name="merge"></a>
 
 ___
 
-### 25. std::set_intersection <a name="setin"></a>
+### 25. std::set_union <a name="setun"></a>
+
+___
+
+### 26. std::set_intersection <a name="setin"></a>
 
