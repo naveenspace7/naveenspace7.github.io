@@ -327,10 +327,20 @@ Hint: for `pred` use: `less<T>()` for sorting in ascending order and `greater<T>
 Linear (in length) time complexity, on average.
 
 More info [here](http://www.cplusplus.com/reference/algorithm/nth_element/).
+
 ___
 
 ### 19. std::reverse <a name="rvr"></a>
 
+Reverses the elements present in the container pointed by the range. Present in the `algorithm` header. Uses `iter_swap` on the elements that are being iterated.
+
+##### Usage:
+
+* `std::reverse(begin(v1), end(v1))`
+
+Linear (in half the length) complexity.
+
+More info [here](http://www.cplusplus.com/reference/algorithm/reverse/).
 
 ___
 
@@ -374,12 +384,12 @@ ___
 
 Present in the `algorithm` header. This function can take either one or two containers and perform unary or binary operation and copy the results into another container. To elaborate it, transform can do one of the two functions:
 
-1. Take a container, pass each of the element to the function given, collect the output into another container.
+Take a container, pass each of the element to the function given, collect the output into another container.
 
 ![Transform Unary Operation]({{site.url}}/assets/images/transform_unary.png)
 
 
-2. Take two containers, pass each of the element as a pair to the binary function given and collect the output into another container.
+Take two containers, pass each of the element as a pair to the binary function given and collect the output into another container.
 
 ![Transform Binary Operation]({{site.url}}/assets/images/transform_binary.png)
 
