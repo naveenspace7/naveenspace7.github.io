@@ -346,6 +346,16 @@ ___
 
 ### 20. std::reverse_copy <a name="rcopy"></a>
 
+Reverses the elements present in the container pointed by the range. Present in the `algorithm` header.
+
+##### Usage:
+
+* `std::reverse_copy(begin(v1), end(v1), begin(dest_v))`
+
+Linear complexity.
+
+More info [here](http://www.cplusplus.com/reference/algorithm/reverse_copy/).
+
 ___
 
 ### 21. std::set_difference <a name="sdiff"></a>
