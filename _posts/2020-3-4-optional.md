@@ -85,6 +85,6 @@ void client()
 
 The validity of the optional can be checked by `has_value` function, which return a bool whether it contains a value or not.
 
-The data can be extracted with `value` function. However, if the to assign a default option when there is no value present, use `value_or` function, which takes as an argument the default value to be returned.
+The data can be extracted with `value` function. However, if the to assign a default option when there is no value present, use `value_or` function, which takes as an argument the default value to be returned. Fully functional code is available [at this gist](https://gist.github.com/naveenspace7/2be0fe067bd87017211999f64f6dba69).
 
 [Reference](https://en.cppreference.com/w/cpp/utility/optional)
