@@ -16,7 +16,20 @@ tags: C++ Algorithms
 | [13. search](#srch) | [14. search_n](#srchn)      | [15. binary_search](#bsrch) |
 | [16. copy](#cpy) | [17. copy_if](#cpyif)      | [18. nth_element](#nthelem) |
 | [19. reverse](#rvr) | [20. reverse_copy](#rcopy)      | [21. set_difference](#sdiff) |
-| [22. set_symmetric_difference](#ssdiff) | [23. transform](#transform)      |  |
+| [22. set_symmetric_difference](#ssdiff) | [23. transform](#transform)      | [24. iota](#iota) |
+| [25. reduce](#reduce) | [26. adjacent_difference](#adiff) |  |
+
+
+<!-- Pipeline: -->
+<!-- reduce  and this vs accumulate -->
+<!-- inner_product -->
+<!-- transform_reduce -->
+<!-- partial_sum -->
+<!-- inclusive_scan -->
+<!-- transform_inclusive_scan -->
+<!-- transform_exclusive_scan -->
+<!-- adjacent_difference -->
+
 
 
 
@@ -413,6 +426,40 @@ Take two containers, pass each of the element as a pair to the binary function g
 Linear complexity.
 
 More info [here](http://www.cplusplus.com/reference/algorithm/transform/).
+
+___
+
+### 24. std::iota <a name="iota"></a>
+
+Present in the `numeric` header. This function store increasing sequence of numbers (of init, with delta as 1) in a container.
+
+##### Usage:
+
+* `std::iota(begin(v1), begin(v1) + 3, 100)` v1 will contain {100, 101, 102}
+
+Linear complexity.
+
+More info [here](http://www.cplusplus.com/reference/numeric/iota/)
+
+___
+
+### 25. std::reduce <a name="reduce"></a>
+
+___
+
+### 26. std::adjacent_difference <a name="adiff"></a>
+
+Present in the `numeric` header. Assigns to every element a difference between two consecutive values. This operation leaves the first value unchanged.
+
+##### Usage:
+
+* `std::adjacent_difference(begin(v1), end(v1), begin(v_result))`
+
+* `std::adjacent_difference(begin(v1), end(v1), begin(v_result), binary_op)`
+
+Linear complexity.
+
+More info [here](http://www.cplusplus.com/reference/numeric/adjacent_difference/)
 
 ___
 
