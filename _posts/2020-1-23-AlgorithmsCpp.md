@@ -17,18 +17,17 @@ tags: C++ Algorithms
 | [16. copy](#cpy) | [17. copy_if](#cpyif)      | [18. nth_element](#nthelem) |
 | [19. reverse](#rvr) | [20. reverse_copy](#rcopy)      | [21. set_difference](#sdiff) |
 | [22. set_symmetric_difference](#ssdiff) | [23. transform](#transform)      | [24. iota](#iota) |
-| [25. reduce](#reduce) | [26. adjacent_difference](#adiff) |  |
+| [25. reduce](#reduce) | [26. adjacent_difference](#adiff) | [27. inner_product](#inner_product) |
+| [28. generate](#generate) |  |  |
 
 
 <!-- Pipeline: -->
 <!-- reduce  and this vs accumulate -->
-<!-- inner_product -->
 <!-- transform_reduce -->
 <!-- partial_sum -->
 <!-- inclusive_scan -->
 <!-- transform_inclusive_scan -->
 <!-- transform_exclusive_scan -->
-<!-- adjacent_difference -->
 
 
 
@@ -463,6 +462,22 @@ More info [here](http://www.cplusplus.com/reference/numeric/adjacent_difference/
 
 ___
 
+### 27. std::inner_product <a name="inner_product"></a>
+
+Present in the `numeric` header. Takes two containers and performs op1 on each of the pair and performs op2 on all the elements in the resulting container. By default, these operations are op1 = addition (reduce operation) and op2 = multiplication.
+
+##### Usage:
+
+* `std::inner_product(begin(v1), end(v1), begin(v2), init)`
+
+* `std::inner_product(begin(v1), end(v1), begin(v2), init, op1, op2)`
+
+Linear complexity.
+
+More info [here](http://www.cplusplus.com/reference/numeric/inner_product/)
+
+___
+
 ### 24. std::merge <a name="merge"></a>
 
 ___
@@ -473,3 +488,18 @@ ___
 
 ### 26. std::set_intersection <a name="setin"></a>
 
+___
+
+### 28. std::generate <a name="generate"></a>
+
+Present in the `algorithm` header. Calls `gen` for filling every element in the container.
+
+##### Usage:
+
+* `std::generate(begin(v1), end(v1), gen)`
+
+Linear complexity.
+
+More info [here](http://www.cplusplus.com/reference/algorithm/generate/)
+
+___
