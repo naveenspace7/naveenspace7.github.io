@@ -17,7 +17,7 @@ He is very passionate about the low-level software that goes into modern devices
 
 <!-- He hold a Master's degree in Embedded Systems and  -->
 
-He is most familiar with programming STM32, TI CC1xxx, nRF51/nRF52 and ESP32 microcontroller. He hold a bachelor's degree in Electronics and Communications.
+He is most familiar with programming STM32, TI CC1xxx, nRF51/nRF52 and ESP32 microcontroller. He hold a Master of Science degree in Embedded Systems and a Bachelor of Technology degree in Electronics and Communications Engineering.
 
 ## Skills
 
@@ -153,12 +153,12 @@ Occasionally used tools are Valgrind, Google Benchmark, Jenkins.
 
 <!-- Software tools that I use frequently include gdb, valgrind, google benchmark, google test -->
 
-## Most used IDEs
+## Most used IDEs/editors
 
 Vim, Visual Studio Code, Eclipse (for embedded targets).
 
 ## Interests
-Embedded software development, ARM microcontrollers, Embedded Linux, Linux driver development, Heterogenous computing
+Embedded software development, ARM microcontrollers, Embedded Linux, Embedded Android, Linux driver development, Heterogenous computing
 
 ### Contact me
 
