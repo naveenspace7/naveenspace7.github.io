@@ -17,7 +17,7 @@ He is very passionate about the low-level software that goes into modern devices
 
 <!-- He hold a Master's degree in Embedded Systems and  -->
 
-He is most familiar with programming STM32, TI CC1xxx, nRF51/nRF52 and ESP32 microcontroller. He hold a Master of Science degree in Embedded Systems and a Bachelor of Technology degree in Electronics and Communications Engineering.
+He is most familiar with programming STM32, TI CC1xxx, nRF51/nRF52 and ESP32 microcontroller. He holds a Master of Science degree in Embedded Systems and a Bachelor of Technology degree in Electronics and Communications Engineering.
 
 ## Skills
 
