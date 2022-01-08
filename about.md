@@ -165,6 +165,6 @@ Embedded software development, ARM microcontrollers, Embedded Linux, Embedded An
 Find my stuff on Github:
 [naveenspace7](https://github.com/naveenspace7)
 
-<!-- Mail me:
-[naveen.j_94@outlook.com](mailto:naveen.j_94@outlook.com) -->
+Mail me:
+[kernelupdated@protonmail.com](mailto:kernelupdated@protonmail.com)
 
