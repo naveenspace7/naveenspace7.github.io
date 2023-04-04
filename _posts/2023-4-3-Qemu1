@@ -1,0 +1,112 @@
+---
+layout: post
+title: Using Qemu with User applications
+excerpt_separator: <!--more-->
+tags: emulation arm self-reference
+---
+
+Qemu is an emulator that supports various architectures. In this self-reference post, I will describe how Qemu can be used in user-level programs, all the essential commands and steps that are needed.
+
+<!--more-->
+
+## Prerequiste: 
+* Qemu for ARM is installed.
+* ARM Cross compiler toolchain is downloaded (this path would be refered as `arm-toolchain`).
+* gdb-multiarch for debugging.
+
+## Qemu variants
+* One that emulates a standalone, user-level program.
+* Another that emulates the complete system, including the operating system. In this case, the whole of the OS is emulated along with the kernel and filesystem.
+
+For more information, refer to [1]
+
+## Sample programs
+For the sake of completeness (or call it for more coverage), I will use two programs, one written in C (which we use to just see the output) and other in assembly (which we use to debug, although the former also could be used for this purpose).
+
+### C program
+
+``` C
+// main.c
+#include <stdio.h>
+
+int main()
+{
+  int fav_num = 7;
+  printf("Fav_num:%d\n", fav_num);
+}
+```
+
+#### Compiling it for ARM Cortex A7
+
+##### Dynamic linking
+When the executable is compiled with dynamic linking, the C runtime library path needs to be specified. For example, the command is as follows, which would output the **out_dynamic**.
+
+`$ arm-toolchain/bin/arm-none-linux-gnueabihf-gcc -mfloat-abi=hard -mcpu=cortex-a7 -mlittle-endian -o out_dynamic main.c`
+
+##### Static linking
+But if the compilation is done with `static` linkage, the executable could be run directly without specifying such libraries. For example, which would output the **out_static**.
+
+`$ arm-toolchain/bin/arm-none-linux-gnueabihf-gcc -mfloat-abi=hard -mcpu=cortex-a7 -mlittle-endian -static -o out_static main.c`
+
+### Assembly program
+``` asm
+.section .text
+.global _start
+_start:
+    mov r0, #7
+    mov r1, #6
+    add r2, r0, r1
+    bkpt
+```
+
+#### Compiling it for ARM Cortex A7
+##### Static linking
+`$ arm-toolchain/bin/arm-none-linux-gnueabihf-as -mthumb -mfloat-abi=hard -mcpu=cortex-a7 -mlittle-endian -o out.o main.s`
+`$ arm-toolchain/bin/arm-none-linux-gnueabihf-ld -o out out.o`
+
+## Running the emulator
+
+The command to run the emulator with a dynamic binary is:
+`$ qemu-<arch>-static -L arm-toolchain/<toolchain>/libc <out_dynamic>` arch = aarch64 or arm, executable = compiled with specific compiler.
+
+The command to run the emulator with a static binary is:
+`$ qemu-<arch>-static <out_static>` arch = aarch64 or arm, executable = compiled with specific compiler. More options in [2].
+
+More options in [2].
+
+## Debugging with GDB
+
+It is also possible to debug an executable running on Qemu from the host. But the executable needs to be compiled to have debug symbols. This can be achieved by adding `-g` flag in the compilation command.
+
+First, start the executable that needs to be debugged on Qemu with the following command:
+`qemu-arm -L <path> -g <any_port> <executable>`
+
+Next, start `gdb-multiarch` without any additional flags and enter the following list of commands in the gdb prompt:
+
+``` gdb
+
+(gdb) file <executable> # loads all the debug symbols
+
+(gdb) set architecture armv7
+
+(gdb) set sysroot arm-toolchain/<toolchain>/
+
+(gdb) target remote localhost:<port_no> # the port no. has to match what was specified when starting the executable
+
+(gdb) break main
+
+(gdb) continue
+
+# Now you are in main, enjoy debugging
+```
+For more reference, look into [3], [4]
+
+## References:
+
+[1] https://wiki.archlinux.org/title/QEMU
+
+[2] https://qemu-project.gitlab.io/qemu/user/main.html
+
+[3] https://github.com/WojciechMigda/how-to-qemu-arm-gdb-gtest
+
+[4] https://developer.apple.com/library/archive/documentation/DeveloperTools/gdb/gdb/gdb_17.html
