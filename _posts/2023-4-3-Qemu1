@@ -18,6 +18,8 @@ Qemu is an emulator that supports various architectures. In this self-reference 
 * One that emulates a standalone, user-level program.
 * Another that emulates the complete system, including the operating system. In this case, the whole of the OS is emulated along with the kernel and filesystem.
 
+For more information, refer to [1]
+
 ## Sample programs
 For the sake of completeness (or call it for more coverage), I will use two programs, one written in C (which we use to just see the output) and other in assembly (which we use to debug, although the former also could be used for this purpose).
 
@@ -68,9 +70,9 @@ The command to run the emulator with a dynamic binary is:
 `$ qemu-<arch>-static -L arm-toolchain/<toolchain>/libc <out_dynamic>` arch = aarch64 or arm, executable = compiled with specific compiler.
 
 The command to run the emulator with a static binary is:
-`$ qemu-<arch>-static <out_static>` arch = aarch64 or arm, executable = compiled with specific compiler. More options in [1].
+`$ qemu-<arch>-static <out_static>` arch = aarch64 or arm, executable = compiled with specific compiler. More options in [2].
 
-More options in [1].
+More options in [2].
 
 ## Debugging with GDB
 
@@ -97,9 +99,14 @@ Next, start `gdb-multiarch` without any additional flags and enter the following
 
 # Now you are in main, enjoy debugging
 ```
+For more reference, look into [3], [4]
 
-References:
+## References:
 
-[1] https://qemu-project.gitlab.io/qemu/user/main.html
+[1] https://wiki.archlinux.org/title/QEMU
 
-[2] https://wiki.archlinux.org/title/QEMU
+[2] https://qemu-project.gitlab.io/qemu/user/main.html
+
+[3] https://github.com/WojciechMigda/how-to-qemu-arm-gdb-gtest
+
+[4] https://developer.apple.com/library/archive/documentation/DeveloperTools/gdb/gdb/gdb_17.html
