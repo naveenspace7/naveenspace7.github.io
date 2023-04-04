@@ -1,0 +1,68 @@
+---
+layout: post
+title: Using Qemu with User applications
+excerpt_separator: <!--more-->
+tags: emulation arm self-reference
+---
+
+Qemu is an emulator that supports various architectures. In this self-reference post, I will describe how Qemu can be used in user-level programs, all the essential commands and steps that are needed.
+
+<!--more-->
+
+## Prerequiste: Qemu for ARM is installed.
+
+## Qemu variants
+
+* One that emulates a standalone, user-level program.
+* Another that emulates the complete system, including the operating system. In this case, the whole of the OS is emulated along with the kernel and filesystem.
+
+## Sample programs
+
+For the sake of completeness (or call it for more coverage), I will use two programs, one written in C (which we use to just see the output) and other in assembly (which we use to debug, although the former also could be used for this purpose).
+
+### C program
+
+``` C
+// Sample C program
+#include <stdio.h>
+
+int main()
+{
+  int fav_num = 7;
+  printf("Fav_num:%d\n", fav_num);
+}
+```
+
+#### Compiling it for ARM Cortex A7
+
+##### Dynamic linking
+When the executable is compiled with dynamic linking, the C runtime library path needs to be specified. For example, the command is as follows:
+TODO: compiling with compiler
+
+##### Static linking
+But if the compilation is done with `static` linkage, the executable could be run directly without specifying such libraries. For example:
+TODO: compiling with compiler
+
+### Assembly program
+TODO: add assembly program here
+
+#### Compiling it for ARM Cortex A7
+
+##### Dynamic linking
+TODO: compiling with assembler
+
+##### Static linking
+TODO: compiling with assembler
+
+## Running the emulator
+
+The command to run the emulator is:
+`qemu-<arch>-static <executable>` arch = aarch64 or arm, executable = compiled with specific compiler. More options in [1]
+
+# TODO: debugging
+
+References:
+
+[1] https://qemu-project.gitlab.io/qemu/user/main.html
+
+[2] https://wiki.archlinux.org/title/QEMU
