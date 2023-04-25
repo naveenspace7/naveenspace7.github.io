@@ -4,20 +4,18 @@ title: About
 permalink: /about/
 ---
 
-Naveen Chakravarthy is a software engineer, electronics hobbyist and robotist. 
+I am an embedded software/firmware engineer, electronics hobbyist and robotist.
 
 <!-- I am a die-hard fan of low-level software development in C and C++. -->
 <!-- My thesis focuses on ultra-low latency MAC protocols to incorporate into wireless Tactile Internet applications. -->
+I like to be closer to the metal. I am very passionate about the low-level software that goes into modern devices, while not being afraid to make any hardware designs. With about 5 years of professional work experience as an embedded software engineer and more than 4 additional years of hobby experience as a tinkerer and maker, I have developed a deep passion for electronics hardware and firmware.
 
-He is very passionate about the low-level software that goes into modern devices, while not being afraid to make any hardware designs. He has about 2.5 years of professional work experience as a software engineer during which he had used C and C++ as his primary programming languages on Linux, Windows and embedded device environments.
+I am proficient in C and C++ languages and had used them on Linux, Windows and embedded devices. I am knowledgeable about computer architecture (both ISA and microarchitecture) and FPGA design.
+
+Education-wise, I have a bachelor's degree in Electronics and Communications Engineering and a Master's degree in Embedded Systems. Currently, I am based in the Netherlands.
 
 <!-- I had programmed ARM Cortex-M (M3, M4, M7) microcontrollers and peripheral drivers (including DMA, CAN, I2C, SPI, UART, Timers) in embedded C and C++. Additionally, I had programmed for heterogeneous systems in CUDA and OpenCL. -->
 
-<!-- ### More Information -->
-
-<!-- He hold a Master's degree in Embedded Systems and  -->
-
-He is most familiar with programming STM32, TI CC1xxx, nRF51/nRF52 and ESP32 microcontroller. He holds a Master of Science degree in Embedded Systems and a Bachelor of Technology degree in Electronics and Communications Engineering.
 
 ## Skills
 
