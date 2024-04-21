@@ -1,0 +1,52 @@
+## Item 2: Prefer `const`s, `enum`s and `inline`s to `#define`s
+
+#### Keytakeaways:
+* Don't use `define`s as they are not visible to the compiler (making the error messages hard to read).
+* Prefer to use `const`s when possible and limit their scope to a class.
+* If an object is being shared as read-only between objects, make them `static`.
+* Prefer `inline` functions to macro-like functions.
+
+#### Additional explanation:
+
+#### Trick/new information:
+* `static`s declaration and definition in the class is a bit scattered.
+* A non-static member `const` although a `const` cannot be used for declaring an array with size. While an enum would work (called as enum hack).
+
+
+## Item 3: Use `const` whenever possible
+
+#### Keytakeaways:
+* Use `const` were the data is not going to be modified, it additionally also helps the reader.
+* Use `const` in the return types where the data might get modified inadvertently (eg. `(a*b) = c`).
+* const object can only call `const` member functions. But non-const objects can also call the `const` member functions.
+* `mutable` objects could be modified inside `const` member functions.
+
+
+#### Additional explanation:
+* (a) const pointer to non-const data: (`int * const data_p`).
+* (b) non-const pointer to const data: (`const int * data_p`).
+* (c) const pointer to const data: (`const int * const data_p`).
+* (d) non-const pointer to non-const data: (`int * data_p`).
+* Iterator version of (a): `const ::iterator it`.
+* Iterator version of (b): `::const_iterator c_it`.
+* Bitwise constness: doesn't allow any of the bits to be modified. Logical constness: a bit more strict that bitwise constness as bitwise constness has some loopholes (see this chapter).
+
+#### Trick/new information:
+* To avoid duplication of similar functions doing the same work but differing in constness, use the following trick:
+    1. Implement the const function as desired.
+    2. Make the non-const function call the const function with the following modifications. Convert `this` to a const (using `static_cast`) and apply the subscript, later cast away the constness (with `const_cast`).
+
+``` cpp
+class TextBlock {
+private:
+    char * data[13];
+public:
+    const char& operator[](const int index) const {
+        return data[index];
+    }
+
+    char& operator[](const int index) {
+        return const_cast<TextBlock&>(static_cast<const TextBlock&>(*this)[index]);
+    }
+}
+```
